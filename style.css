@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap');
+@font-face {
+    font-family: 'wONb';
+    src: url('Fonts/White\ On\ Black.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --gold: #e6a800;
+    --bg-footer: rgb(0, 12, 12);
+    --font-destaque: 'Roboto', Arial, sans-serif;
+    --logo-footer: 'wONb',cursive;
+}
+header { 
+    background-color: black; /*/    #555    */
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 2px 1px rgb(22, 22, 22);
+    display: flex;
+    justify-content: center;
+}
+header a {
+    padding: 1rem;
+}
+header a:hover {
+    transition: background-color 200ms;
+    background-color: #222;
+    border-radius: 5px;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    left: 85px;
+    top: 184px;
+}
+nav ul li {
+    font-size: 1.3rem;
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    margin-right: 0.6rem;
+    padding: 0.2rem;
+    color: var(--gold);
+}
+nav ul li:hover {
+    transition: color 250ms;
+    cursor: pointer;
+    color: #efe;
+    border-radius: 5px;
+}
+body {
+    background-color: #ddd;
+}
+main {
+    max-width: 600px;
+    margin: 2rem auto 0;
+    padding: 0.8rem;
+}
+.title {
+    margin-bottom: 0.3rem;
+    font: bold normal 1.1rem Arial;
+    text-align: center;
+}
+.copyicon {
+    width: 1rem;
+}
+.copyicon:hover {
+    cursor: pointer;
+}
+.catalogo {
+    width: auto;
+    margin: auto;
+}
+.catalogo ul {
+    list-style-type: none;
+    font: normal 1rem Arial;
+    text-align: justify;
+    padding: 0.5rem 0;
+}
+.catalogo ul li {
+    display: flex;
+    justify-content: space-between;
+}
+.catalogo ul li:hover {
+    cursor: copy;
+    text-decoration: line-through;
+}
+.price {
+    color: green;
+    font-weight: bolder;
+    text-align: right;
+}
+footer {
+    padding: 0.1rem;
+    background-color: black;
+}
+footer p {
+    text-align: center;
+    font: italic lighter 1rem arial;
+    color: var(--gold);
+}
+footer a {
+    text-decoration: none;
+    color: var(--gold);
+}
